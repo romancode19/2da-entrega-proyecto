@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title> Yerba Mate Oscar</title>
+
+    <!-- No me salio agregar los links para el funcionamiento de las animaciones de la pagina WOW. Probe seguir las instrucciones de lo que hay que copiar y pegar del ppt, y tambien desde el "how to use it" de la pagina misma, pero no hubo caso-->
+    <link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Encabezado-->
+    <p class="envios">ENVIOS GRATIS EN CABA EN TU COMPRA SUPERIOR A $3000</p>
+    <!--========================================-->
+    <!--NAVBAR con bootstrap-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark menu-estilos">
+        <!--comentario: queria poner de fondo la imagen de la oveja pero cambiar el estilo de bootstrap para que no queden apagados por el fondo claro, pase de light a dark para que se vean los elementos, pero no se aplicó-->
+        <div class="container-fluid botones-estilos">
+            <a class="navbar-brand" href="index.html">
+                <!--logo-->
+                <img src="multimedia/Oscar_Facha.jpg" alt="logo-oscar" width="40" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"> Inicio </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/nosotros.html"> Nosotros </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/productos.html"> Contacto </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/pages/productos.html" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="/pages/yerbas.html">Yerbas</a></li>
+                            <li><a class="dropdown-item" href="/pages/mates.html">Mates</a></li>
+                            <li><a class="dropdown-item" href="/pages/varios.html">Varios</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Parte principal de la pagina pensada en forma de grid-->
+    <div class="grid-container">
+
+        <!-- primer elemento imagen de oscar-->
+        <div class="oscar">
+            <img class="oscar-mate" src="/multimedia/oscar-fondo.jpg" alt="oscar-tomando-mate" />
+        </div>
+
+        <!-- segundo elemento texto de bienvenida a la pagina-->
+        <div class="bienvenidos">
+            <!--Aca le agregué la clase con la animacion pero no entendi como hacer para activarla-->
+            <h2 class="wow animate__tada"> Bienvenidos a la página oficial de Yerba Mate Oscar!</h2>
+            <h2> Te invitamos a recorrer nuestro menu. Conocenos, explora las mejores yerbas de Oscar y arma tu pedido!
+            </h2>
+        </div>
+
+        <!-- tercer elemento instrucciones para un buen mate-->
+        <div class="instrucciones">
+            <h3 class="buen-mate">Pero primero vayamos a algo importante: sabes preparar un buen mate? Oscar te enseña
+                en 4 sencillos pasos!</h3>
+            <ol class="pasos">
+                <li>Carga el mate con la yerba de Oscar!</li>
+                <li>Tapando el mate con la mano, sacudilo un poco para que se mezcle bien</li>
+                <li>Para el primer mate, primero moja la yerba con agua tibia y luego con el agua caliente</li>
+                <li>
+                    <strong>Listo! Dale play al video y a disfrutar de tus mates con la canción favorita de
+                        Oscar!</strong>
+                </li>
+            </ol>
+        </div>
+
+        <!-- cuarto elemento video youtube-->
+        <div class="chacarera">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MordItbm_TU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+
+
+
+    </div>
+
+    <footer class="footer-padre">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Linkedin</a>
+    </footer>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+
+</body>
+
+</html>

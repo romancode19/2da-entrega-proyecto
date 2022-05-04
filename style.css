@@ -1,0 +1,84 @@
+:root {
+    background-color: rgba(159, 255, 62, 0.87);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* estilo para el encabezado de envios */
+.envios {
+    background-image: linear-gradient(green, rgb(39, 247, 39));
+    font-weight: bold;
+    color: aliceblue;
+    text-align: center;
+}
+
+/*navbar*/
+nav a:hover {
+    
+    background-color: rgb(223, 41, 41);
+}
+
+
+.menu-estilos{
+        position:sticky;
+        
+        background-image: url(multimedia/oveja.jpg);
+        background-size: contain;
+        background-repeat: repeat-x;
+
+}
+
+/*grid del main*/
+.grid-container{
+    display: grid;
+    border: 1px solid black;
+    margin: 2px;
+    
+    
+    /*tamaño de cada columna y fila */
+    grid-template-columns: repeat(2, 50%); 
+    grid-template-rows: repeat(3, 315px);
+    gap: 1px 1px; 
+    grid-template-areas: 
+    "oscar bienvenidos "
+    "oscar instrucciones "
+    "oscar chacarera " ;
+}
+
+/*ACTIVACION llamando al selector de clase para cada clase y su grid-area*/
+.oscar{
+    grid-area: oscar;
+    background-color: rgb(255, 23, 93);
+    background-image: url(/multimedia/hola-soy-oscar.jpg);
+}
+
+.bienvenidos{
+    grid-area: bienvenidos;
+    background-color: rgb(78, 184, 119);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+
+.instrucciones{
+    grid-area: instrucciones;
+    background-color: rgb(226, 255, 158);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.chacarera{
+    grid-area: chacarera;
+    background-color: rgb(78, 184, 119);
+    text-align: center;
+}
+
+/*animaciones*/
+
+
+
+
+
